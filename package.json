@@ -1,0 +1,43 @@
+{
+  "name": "cli-update-notifier",
+  "version": "0.0.0",
+  "description": "Notify users of CLI updates",
+  "keywords": [
+    "cli",
+    "update",
+    "notifier",
+    "cli-update",
+    "version-check"
+  ],
+  "repository": "https://github.com/TenEplaysOfficial/cli-update-notifier.git",
+  "author": {
+    "name": "Sriman",
+    "email": "136729116+TenEplaysOfficial@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "release": "release-it",
+    "prebuild": "yarn lint",
+    "build": "node esbuild.config.js"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1",
+    "npm-metadata": "^1.0.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "esbuild": "^0.25.6",
+    "eslint": "^9.30.1",
+    "globals": "^16.3.0",
+    "release-it": "^19.0.3"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "cli-update-notifier",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Notify users of CLI updates",
   "keywords": [
     "cli",

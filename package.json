@@ -1,6 +1,6 @@
 {
   "name": "cli-update-notifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Notify users of CLI updates",
   "keywords": [
     "cli",
@@ -8,6 +8,9 @@
     "notifier",
     "cli-update",
     "version-check"
+  ],
+  "files": [
+    "dist"
   ],
   "repository": "https://github.com/TenEplaysOfficial/cli-update-notifier.git",
   "author": {

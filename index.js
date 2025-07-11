@@ -4,9 +4,13 @@ import chalk from "chalk";
 
 const detectPackageManager = () => {
   const userAgent = process.env.npm_config_user_agent || "";
-  if (userAgent.includes("yarn")) return "yarn";
-  if (userAgent.includes("pnpm")) return "pnpm";
-  if (userAgent.includes("bun")) return "bun";
+
+  if (userAgent.startsWith("yarn")) return "yarn";
+  if (userAgent.startsWith("pnpm")) return "pnpm";
+  if (userAgent.startsWith("bun")) return "bun";
+
+  if (typeof Deno !== "undefined") return "deno";
+  if (typeof Bun !== "undefined") return "bun";
 
   return "npm";
 };
@@ -21,6 +25,8 @@ const getInstallCommand = (name, manager) => {
       return `bun add -g ${name}`;
     case "npm":
       return `npm i -g ${name}`;
+    case "deno":
+      return `deno install -g npm:${name}`;
   }
 };
 

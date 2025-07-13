@@ -1,4 +1,6 @@
 import { build } from "esbuild";
+import { copyFileSync } from "fs";
+import { resolve } from "path";
 
 const pkg = await import("./package.json", { assert: { type: "json" } }).then(
   (mod) => mod.default
@@ -26,3 +28,6 @@ await build({
   external: externalDeps,
   logLevel: "info",
 });
+
+copyFileSync(resolve("index.d.ts"), resolve("dist/index.d.ts"));
+console.log("Copied index.d.ts to dist/");

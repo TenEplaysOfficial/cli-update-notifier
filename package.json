@@ -39,7 +39,7 @@
   "dependencies": {
     "boxen": "^8.0.1",
     "chalk": "^5.4.1",
-    "npm-metadata": "^1.0.2"
+    "npm-metadata": "^1.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",

@@ -38,14 +38,9 @@ export default async function notify(
   padding = 1,
   borderColor = "green"
 ) {
-  const originalLog = console.log;
-  console.log = () => {};
-
-  const latestVersion = await metadata(name).then(
-    (result) => result["dist-tags"].latest
-  );
-
-  console.log = originalLog;
+  const latestVersion = await metadata(name, {
+    silentLog: true,
+  }).then((result) => result["dist-tags"].latest);
 
   if (latestVersion === currentVersion) {
     return;

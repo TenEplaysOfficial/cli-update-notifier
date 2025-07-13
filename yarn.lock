@@ -1458,10 +1458,10 @@ node-fetch-native@^1.6.6:
   resolved "https://registry.yarnpkg.com/node-fetch-native/-/node-fetch-native-1.6.6.tgz#ae1d0e537af35c2c0b0de81cbff37eedd410aa37"
   integrity sha512-8Mc2HhqPdlIfedsuZoc3yioPuzp6b+L5jRCRY1QzuWZh2EGJVQrGppC6V6cF0bLdbW0+O2YpqCA25aF/1lvipQ==
 
-npm-metadata@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/npm-metadata/-/npm-metadata-1.0.2.tgz#06138e7283c1f9efb30317aac2d138252eb371d0"
-  integrity sha512-mO9EsMEZPN6M1h9VDTX9vhpZmvDxytdY273ECIUtrLPIf+DwRmb57uk1p2o4IcRVhmgcg5TOODFPhwFpxj6/Ew==
+npm-metadata@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/npm-metadata/-/npm-metadata-1.1.0.tgz#929d300b9f55f6b1653ab61a040c62453fc4a407"
+  integrity sha512-cvyiCtf4bOVtP4Oz8/pP4bBz79SQucvTkHs+LC8Ee7CLyHBc5Erh9KEUz9DIvqouAorNx0euRrvKCWt3EeztgQ==
   dependencies:
     commander "^14.0.0"
     log-symbols "^7.0.1"
